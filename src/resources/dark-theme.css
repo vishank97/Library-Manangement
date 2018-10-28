@@ -1,0 +1,89 @@
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+    -fx-red: #FF0000;
+}
+/*Login Screen*/
+.root{
+    -fx-background-color: -fx-primary;
+}
+
+.glyph-icon
+{
+    -fx-fill: -fx-primarytext;
+}
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+}
+
+.login-button{
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+.login-button:hover{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+.text-field
+{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size: 13pt;
+    -jfx-focus-color: -fx-secondary;
+    
+}
+
+.wrong-credentials
+{
+    -jfx-unfocus-color: -fx-red;
+    -jfx-focus-color: -fx-red;
+}
+
+/* Main Screen */
+
+.tab{
+    -fx-background-color: -fx-primary;
+    -fx-pref-width : 350;
+    -fx-pref-height : 60;
+}
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+/*Menu Bar*/
+
+.menu-bar{
+    -fx-base: -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+.context-menu{
+    -fx-background-color: derive(-fx-primary,20%);
+}
+
+/*Hamburger Style*/
+.jfx-hamburger-icon{
+    -fx-spacing: 7;
+}
+.jfx-hamburger-icon StackPane
+{
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 5px;
+}
+.toolbar-button{
+    /*-fx-border-color: transparent;*/
+    -fx-background-color: derive(-fx-primary,20%);
+    /*-fx-background-radius: 0px;
+    -fx-border-radius: 0px;*/
+}
+.toolbar-button:hover{
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+.toolbar-button:hover .glyph-icon{
+    -fx-fill: -fx-primary;
+}
